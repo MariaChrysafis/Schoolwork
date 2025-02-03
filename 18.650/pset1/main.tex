@@ -1,1 +1,27 @@
-test
+% \documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
+\begin{document}
+\section{Part 1: probability review}
+\begin{Exercise}
+	Let $X$ be a random variable taking values between $0$ and $\pi$ with pdf given by $f(x) = c\sin(x), x \in [0, \pi].$ What is the value of $c$?
+\end{Exercise}
+\begin{Solution}
+	Since the integral of the pdf is always $1$ (by definition),
+	\begin{align*}
+		1 = \int_{0}^{\pi} f(x) \dd{x} = \int_{0}^{\pi} c \sin x \dd{x} = -c \Big|_{0}^{\pi} \cos x = -c (\cos \pi - \cos 0) = -c (-2) = 2c. 
+	\end{align*}
+	And so, $2c = 1$ and $c = \frac{1}{2}$. $\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\mathbb{E}[X]$?
+\end{Exercise}
+\begin{Solution}
+	By the definition of expectation, 
+	\begin{align*}
+		\mathbb{E}[X] = \int_{0}^{\pi} x f(x) \dd{x} = \int_0^{\pi} c x \sin x \dd{x} = c \Big|_0^{\pi} \left( \sin x - x \cos x \right) = c (-\pi \cos \pi + \sin \pi - 0 \cos 0 + \sin 0) = \pi c.
+	\end{align*}
+	We know from the previous problem that $c = \frac{1}{2}$, so $\mathbb{E}[X] = \frac{\pi}{2}.$ $\boxed{A}$.
+\end{Solution}
+
+\end{document}
