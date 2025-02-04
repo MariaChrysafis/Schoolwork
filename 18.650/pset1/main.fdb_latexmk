@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1738632525.89436 "main.tex" "main.pdf" "main" 1738632526.77161 0
-  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1738632065.24116 973 a7500507296d1eb3eaeda6168cf622a8 ""
+["pdflatex"] 1738634094.63152 "main.tex" "main.pdf" "main" 1738634095.53806 0
+  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1738632915.9904 996 6b727cdbab9edc813d626150cae2de94 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -20,6 +20,8 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb" 1248133631 33536 2645d35275aa4ba040fe69615db002f1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -127,6 +129,8 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty" 1708549794 77022 5c8c440739265e7ba15b8379ece6ecd7 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty" 1708549794 329 f19f5da7234b51d16764e23d20999c73 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty" 1576101256 5148 1baf596b2560b44d9ff1889dc1d7564e ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty" 1710187076 62672 9ff036bc89365461cc2bd482cc1e4879 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/pdfcol/pdfcol.sty" 1663877585 8086 ac143843b6ea88d172677dc3ed532925 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1673816307 373 00b204b1d7d095b892ad31a7494b0373 ""
@@ -159,6 +163,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty" 1691524336 1120 ba535da48caa03bf1fd3f03ea87779f8 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex" 1691524336 10931 717eb52299f416934beb8b2b7cd8cee6 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty" 1698869629 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty" 1698869629 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty" 1700689882 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1253232110 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
@@ -166,8 +171,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1717734193.15744 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1717734146 8221447 731d28afb0c679c0dc47d3bbcf8d4b61 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1738632526.71241 226 24f41d442a222deac39689cd2e2c7634 "pdflatex"
-  "main.tex" 1738632526.29816 6866 1936fc109628a4fef582b9eff496aecd ""
+  "main.aux" 1738634095.47195 326 e051a075f85e34743d8be74ce837fdba "pdflatex"
+  "main.tex" 1738634094.13763 8572 f1349a636f4d2ba7c251cf79c83487ad ""
   (generated)
   "main.aux"
   "main.log"

@@ -179,4 +179,51 @@
 	\end{align*}
 	$\boxed{B}$.
 \end{Solution}
+\section{New Concepts}
+\begin{Exercise}
+	Let $X_n \sim \text{Unif}(-1/n, 1/n)$ and let $X$ be a random variable such that $\mathbb{P}[X = 0] = 1.$
+	\begin{itemize}
+		\item[1.] Compute and draw the CDF $F_n(x)$ and $F(x)$ of $X_n$ and $X$ respectively.
+		\item[2.] Does $X_n \xrightarrow[]{P} X$? (prove or disprove)
+		\item[3.] Does $X_n \rightsquigarrow X$ (prove or disprove)
+	\end{itemize}
+\end{Exercise}
+\begin{Solution}
+	\begin{itemize}
+		\item[1.] 
+		\item[2.] We know that for all $\epsilon$,
+			\begin{align*}
+				\mathbb{P}[|X_n - X| > \epsilon] = \mathbb{P}[|X_n| > \epsilon] = 1 - \mathbb{P}[|X_n| \le \epsilon] = 1 - \text{min} \left( \frac{2 \epsilon}{\frac{2}{n}}, 1 \right) = 1 - \min(n \epsilon, 1).
+			\end{align*}
+			Therefore,
+			\begin{align*}
+				\lim_{n \to \infty} \mathbb{P}[|X_n - X| > \epsilon] = \lim_{n \to \infty} 1 - \min(n \epsilon, 1) = 0,
+			\end{align*}
+			so $X_n$ does converge to $X$ probabilistically.
+		\item[3.] The CDF of $X$ is 
+			\begin{align*}
+				F(t) = \begin{cases}
+					0 & x < 0 \\
+					1 & x \ge 0
+				\end{cases}
+			\end{align*}
+			and the CDF of $X_n$ is 
+			\begin{align*}
+				F_n(t) = \begin{cases}
+					0 & x < -\frac{1}{n} \\
+					\frac{nt + 1}{2} & -\frac{1}{n} \le x \le \frac{1}{n} \\ 
+					1 & x > \frac{1}{n}
+				\end{cases}.
+			\end{align*}
+			As $n$ approaches $\infty$, $F_n(t)$ approaches
+			\begin{align*}
+				F_n(t) = \begin{cases}
+					0 & x < 0 \\
+					\frac{1}{2} & x = \frac{1}{2} \\
+					1 & x = 1
+				\end{cases}.
+			\end{align*}
+			Although $F_n(t)$ and $F(t)$ are not the same functions, they have equal values at all points for which $F$ is continous. Thus, $X_n$ converges to $X$ in distribution. 
+	\end{itemize}
+\end{Solution}
 \end{document}
