@@ -1,6 +1,7 @@
 % \documentclass{article}
 \documentclass[a4paper]{article}
 \usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
+\graphicspath{ {/} }
 \begin{document}
 \section{Part 1: probability review}
 \begin{Exercise}
@@ -190,7 +191,30 @@
 \end{Exercise}
 \begin{Solution}
 	\begin{itemize}
-		\item[1.] 
+		\item[1.] The CDF of $X$ is \begin{align*} F(x) = 
+				\begin{cases}
+					0 & x < 0 \\ 
+					1 & x \ge 0
+				\end{cases}
+			\end{align*}
+			and the CDF of $X_n$ is
+			\begin{align*}
+				F_n(x) = \begin{cases}
+					0 & x < -\frac{1}{n} \\
+					\frac{nt + 1}{2} & -\frac{1}{n} \le \frac{1}{n} \\
+					1 & x> \frac{1}{n}
+				\end{cases}.
+			\end{align*}
+		\begin{figure}[t]
+			\centering
+			\includegraphics[scale=0.5]{f1}
+			\caption{This is the cdf for $X_n$, when $n = 4$.}
+		\end{figure}
+		\begin{figure}[t]
+			\centering
+			\includegraphics[scale=0.5]{f2}
+			\caption{This is the cdf for $X$.}
+		\end{figure}
 		\item[2.] We know that for all $\epsilon$,
 			\begin{align*}
 				\mathbb{P}[|X_n - X| > \epsilon] = \mathbb{P}[|X_n| > \epsilon] = 1 - \mathbb{P}[|X_n| \le \epsilon] = 1 - \text{min} \left( \frac{2 \epsilon}{\frac{2}{n}}, 1 \right) = 1 - \min(n \epsilon, 1).
