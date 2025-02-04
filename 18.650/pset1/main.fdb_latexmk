@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1738627262.45535 "main.tex" "main.pdf" "main" 1738627263.30361 2
-  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1738627006.21298 950 e49946794201beb369e44985c5d0e4e4 ""
+["pdflatex"] 1738632525.89436 "main.tex" "main.pdf" "main" 1738632526.77161 0
+  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1738632065.24116 973 a7500507296d1eb3eaeda6168cf622a8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -166,8 +166,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1717734193.15744 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1717734146 8221447 731d28afb0c679c0dc47d3bbcf8d4b61 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1738627263.24366 226 7afc4ae5b45508f9927a5780c93d3a41 "pdflatex"
-  "main.tex" 1738627262.89097 5421 f468e2a6fe90b1d796dbdf7e718e4d8a ""
+  "main.aux" 1738632526.71241 226 24f41d442a222deac39689cd2e2c7634 "pdflatex"
+  "main.tex" 1738632526.29816 6866 1936fc109628a4fef582b9eff496aecd ""
   (generated)
   "main.aux"
   "main.log"
