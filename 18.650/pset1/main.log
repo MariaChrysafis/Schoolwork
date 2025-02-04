@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.6)  4 FEB 2025 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.6)  4 FEB 2025 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -808,17 +808,17 @@ File: f2.png Graphic file (type png)
 <use f2.png>
 Package pdftex.def Info: f2.png  used on input line 215.
 (pdftex.def)             Requested size: 240.39752pt x 199.24388pt.
- [4] [5 <./f1.png> <./f2.png>] [6] (./main.aux)
+ [4] [5 <./f1.png> <./f2.png>] [6] [7] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25589 strings out of 474116
- 540434 string characters out of 5743683
- 1946187 words of memory out of 5000000
- 47560 multiletter control sequences out of 15000+600000
+ 25592 strings out of 474116
+ 540508 string characters out of 5743683
+ 1948187 words of memory out of 5000000
+ 47563 multiletter control sequences out of 15000+600000
  560681 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,17n,121p,520b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -834,10 +834,10 @@ l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 194927 bytes).
+Output written on main.pdf (7 pages, 197741 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

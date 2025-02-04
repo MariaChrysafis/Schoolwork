@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1738701387.05957 "main.tex" "main.pdf" "main" 1738701388.09642 0
+["pdflatex"] 1738704283.60912 "main.tex" "main.pdf" "main" 1738704285.09671 0
   "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1738632915.9904 996 6b727cdbab9edc813d626150cae2de94 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -173,8 +173,8 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "f1.png" 1738699327.4534 58871 102c9e7705eb9851859bdb4cdee76fe6 ""
   "f2.png" 1738700166.83492 79589 75ac462e34fe2df68bca3548a5742c49 ""
-  "main.aux" 1738701388.03016 588 dda2276dd6c2c2a5e5b856c4b6490785 "pdflatex"
-  "main.tex" 1738701387.10205 10909 fa848da1ec13e77db3d0b4f433b34687 ""
+  "main.aux" 1738704284.99876 588 3238c379a4714fdaf6bfaf5f567084a6 "pdflatex"
+  "main.tex" 1738704283.0435 12956 bb4149f7a44dfb1d3956de4a9e9f6b06 ""
   (generated)
   "main.aux"
   "main.log"
