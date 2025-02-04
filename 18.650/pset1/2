@@ -262,9 +262,7 @@ Let $X \sim \mathcal{N}(1, 2.25)$. Compute the following probabilities (show you
 \begin{Solution}
 	\begin{itemize}
 		\item[1.] Since $X$ is normally distributed around $1$, by symmetry, $\mathbb{P}[X > 1] = 0.5.$ 
-		\item[2.] We know that $\mathbb{P}[|X - 2| \le 1] = \mathbb{P}[1 \le X \le 3]$. If we let $Y$ be $\frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$, then we can rewrite this as $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right]$. Since $Y$ is standard normal, we can now reference the standard normal table, which tells us that $\mathbb{P}\left[Y \le \frac{4}{3}\right] \approx 0.9082$ and $\mathbb{P}\left[Y \le 0\right] = 0.5$, so $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx 0.4082.$
-		\item[3.] Again, we can use a similar technique as the previous part and let $Y= \frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$. Then, it becomes clear that $\mathbb{P}[|X| < 1] =\mathbb{P}[-1 \le X \le 1] =\mathbb{P}\left[ -\frac{4}{3} \le Y \le 0 \right]$, which by symmetry means that $\mathbb{P}[|X| \le 1] = \mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx 0.4082.$
-		\item[4.] Since $(X - 1)^2 - 2 = X^2 - 2X - 1$, $\mathbb{P}[X^2 - 2X - 1 > 0] = \mathbb{P}[(X - 1)^2 - 2 > 0] = \mathbb{P}[(X - 1)^2 > 2] = \mathbb{P}[1 - \sqrt{2} \le X \le 1 + \sqrt{2}]$. Letting $Y = \frac{X - \mu}{\sigma}$, we reduce this to $\mathbb{P}\left[-\frac{\sqrt{2}}{1.5} < X < \frac{\sqrt{2}}{1.5}\right]$. Using a standard normal table, we can compute this to be around $0.3472$.
+		\item[2.] We know that $\mathbb{P}[|X - 2| \le 1] = \mathbb{P}[1 \le X \le 3]$. If we let $Y$ be $\frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$, then we can rewrite this as $\mathbb{P}[0 \le Y \le \frac{4}{3}]$.
 	\end{itemize}
 \end{Solution}
 \end{document}
