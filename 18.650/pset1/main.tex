@@ -23,5 +23,116 @@
 	\end{align*}
 	We know from the previous problem that $c = \frac{1}{2}$, so $\mathbb{E}[X] = \frac{\pi}{2}.$ $\boxed{A}$.
 \end{Solution}
-
+\begin{Exercise}
+	Let $X$ be a Gaussian random variable with mean $\mu >0$ and variance $\mu^2$. What is $\mathbb{E}[X]$?
+\end{Exercise}
+\begin{Solution}
+	The mean, that is $\mathbb{E}[X]$, is $\mu$ by definition. $\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\mathbb{E}[X^2]$?
+\end{Exercise}
+\begin{Solution}
+	By definition of variance,
+	\begin{align*}
+		\mu^2 = \text{Var}[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2 = \mathbb{E}[X^2] - \mu^2,
+	\end{align*}
+	so $\mathbb{E}[X^2] = 2 \mu^2.$ $\boxed{C}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\mathbb{E}[X^3]$?
+\end{Exercise}
+\begin{Solution}
+	Using the binomial theorem,
+	\begin{align*}
+		\mathbb{E}[X^3] &= \mathbb{E}[((X - \mu) + \mu)^3] 
+			     \\ &= \mathbb{E}[(X - \mu)^3] + 3 \mathbb{E}[(X - \mu)^2 \mu] + 3\mathbb{E}[(X - \mu)\mu^2] + \mathbb{E}[\mu^3]
+			     \\ &= 3 \mu \mathbb{E}[(X - \mu)^2] + \mu^3.
+	\end{align*}
+	Since $X - \mu$ is a Gaussian random variable with mean $0$ and variance $\mu^2$, $\mathbb{E}[(X - \mu)^2] = \mu^2$, 
+	\begin{align*}
+		\mathbb{E}[X^3] = 3 \mu^3 + \mu^ = 4 \mu^3.3
+	\end{align*}
+	$\boxed{C}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Var}[X^2]$?
+\end{Exercise}
+\begin{Solution}
+	For a normal random variable with mean $\mu$ and standard deviation $\sigma$, $\mathbb{E}[X^4] = 3 \sigma^4 + 6 \mu^2 \sigma^2 + \mu^4$. Since our mean and standard deviation are both $\mu$ in this case, $\mathbb{E}[X^4] = 10 \mu^4.$ Using this, 
+	\begin{align*}
+		\text{Var}[X^2] &= \mathbb{E}[X^4]- \mathbb{E}[X^2]^2
+			     \\ &= 10 \mu^4 - (2 \mu^2)^2
+			     \\ &= 6 \mu^4.
+	\end{align*}
+	$\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\mathbb{P}[X > 0]$ in terms of the CDF $\Phi$ of the standard Gaussian distribution?
+\end{Exercise}
+\begin{Solution}
+	By definition of the cdf, $$\mathbb{P}[X > 0] = \mathbb{P} \left[ \frac{X - \mu}{\sigma} > -\frac{\mu}{\sigma} \right] = \mathbb{P} \left[ \frac{X - \mu}{\sigma} > -1 \right] = \mathbb{P} \left[ \frac{X - \mu}{\sigma} < \right] = \Phi(1).$$
+	$\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	Let $X$ be a random variable such that
+	\begin{align*}
+		X = \begin{cases}
+			1 & \text{with probability } p \\
+			-1 & \text{with probability } 1- p
+		\end{cases}
+	\end{align*}
+	for some $p \in [0, 1]$. What is $\mathbb{E}[X]$?
+\end{Exercise}
+\begin{Solution}
+	Routine algebra shows that $\mathbb{E}[X] = 1 \cdot p + (-1) \cdot (1 - p) = -1 + 2p.$ $\boxed{D}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Var}[X]$?
+\end{Exercise}
+\begin{Solution}
+	The variance of $X$ is $\mathbb{E}[X^2] - \mathbb{E}[X]^2 = 1 - (1 - 2p)^2 = 4p - 4p^2 = 4p (1 - p).$ $\boxed{C}$.
+\end{Solution}
+\begin{Exercise}
+	For what $p$ is $\text{Var}[X]$ maximized?
+\end{Exercise}
+\begin{Solution}
+	We know from the previous problem that $\text{Var}[X] = 4p - 4p^2$, which has derivative $4 - 8p$. The variance is maximized when that derivative is $0$, so when $4 - 8p = 0 \Longrightarrow p = \frac{1}{2}.$ $\boxed{C}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\mathbb{E}[X^k]$?
+\end{Exercise}
+\begin{Solution}
+	The expected value is $\mathbb{E}[X^k] = 1^k \cdot p + (-1)^k \cdot (1 - p) = p + (-1)^k \cdot (1 - p)$. $\boxed{D}$.
+\end{Solution}
+\begin{Exercise}
+	Let $X$ and $Y$ be two independent standard Gaussian random variables. What is $\mathbb{E}[X^2Y]$?
+\end{Exercise}
+\begin{Solution}
+	Since $X$ and $Y$ are independent, $\mathbb{E}[X^2Y] = \mathbb{E}[X^2] \cdot \mathbb{E}[Y] = 0.$ $\boxed{A}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Var}(X + Y)$?
+\end{Exercise}
+\begin{Solution}
+	Since $X$ and $Y$ are independent, $\text{Var}[X + Y] = \text{Var}[X] + \text{Var}[Y] = 1 + 1 = 2.$ $\boxed{C}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Var}[XY]$?
+\end{Exercise}
+\begin{Solution}
+	The variance is $\text{Var}[XY] = \mathbb{E}[(XY)^2] - \mathbb{E}[XY]^2 = \mathbb{E}[X^2] \mathbb{E}[Y^2] = 1.$ $\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Cov}[X, X + Y]$?
+\end{Exercise}
+\begin{Solution}
+	The covariance is $\text{Cov}[X, X + Y] = \text{Cov}[X, X] + \text{Cov}[X, Y] = 1 + 0 = 1.$ $\boxed{B}$.
+\end{Solution}
+\begin{Exercise}
+	What is $\text{Cov}[X, XY]$?
+\end{Exercise}
+\begin{Solution}
+	The covariance is $\text{Cov}[X, XY] = \mathbb{E}[X^2Y] - \mathbb{E}[X] \mathbb{E}[XY] = 0.$ $\boxed{A}$.
+\end{Solution}
 \end{document}
