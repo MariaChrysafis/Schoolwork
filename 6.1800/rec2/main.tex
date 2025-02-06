@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/6.1800/chrysafis}
+\graphicspath{ {/} }
+
+\begin{document}
+
+\section*{Recitation 2: DNS}
+
+\begin{Exercise}
+    What is the purpose of DNS? 
+\end{Exercise}
+
+\begin{Solution}
+    DNS operates based on Internet Protocol (IP) addresses, which serve as unique identifiers for devices connected to the internet or a local network. Websites also have corresponding IP addresses that specify the servers where they are hosted. While it is possible to access websites directly via their IP addresses (e.g., Google's IPv4 address is 8.8.8.8), memorizing these numerical sequences is impractical, especially since most people have visited several hundred (if not thousand) of websites. Instead, human-readable domain names such as "google.com" simplify navigation. The Domain Name System (DNS) functions as a naming system that maps these domain names to their respective IP addresses, enabling users to type intuitive names into their browsers rather than complex numerical addresses.
+\end{Solution}
+
+\begin{Exercise}
+    How does DNS work?
+\end{Exercise}
+
+\begin{Solution}
+    DNS is structured hierarchically, with domain names segmented by periods to indicate their place within this hierarchy. For instance, in "canvas.mit.edu," the ".edu" domain represents a top-level domain (TLD), which contains the "mit" subdomain, which in turn contains "canvas."
+
+    The resolution of domain names to IP addresses involves multiple nameservers, each responsible for storing specific portions of DNS data. Every DNS query initially contacts a root nameserver, which directs the query to the relevant TLD nameserver. For example, the root nameserver knows the IP address for ".edu" (e.g., 192.14.171.191). From there, the ".edu" nameserver provides the IP address for "mit.edu" (e.g., 18.72.0.3). Finally, the "mit.edu" nameserver resolves "canvas.mit.edu" to its corresponding IP address. This hierarchical lookup process ensures efficient and organized domain name resolution.
+\end{Solution}
+
+\end{document}
+
