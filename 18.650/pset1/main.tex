@@ -313,4 +313,67 @@ Let $X \sim \mathcal{N}(1, 2.25)$. Compute the following probabilities (show you
 			Since $\text{Cov}[X, Y] = 1$ and $\text{Var}[X]= 1$, this would mean that $\alpha = 1$. But, $\alpha$ cannot be $1$, since $Y$ has a different variance than $X$.
 	\end{itemize}
 \end{Solution}
+\begin{Exercise}
+	Let $X_1, \ldots , X_n \sim \text{Ber}(1/2)$ and $Y_1, \ldots , Y_n \sim \text{Exp}(1)$. Assume further that all the random variables are mutually independent. Write a central limit theorem for each of the following quantities in the form $\sqrt{n}(Z_n - \mu) \rightsquigarrow \mathcal{N}(0, \sigma^2)$ if $Z_n$ is a random variable, and $\sqrt{n}(Z_n - \mu) \rightsquigarrow \mathcal{N}(0, \Sigma)$ if $Z_n$ is a random vector. Show your work.
+	\begin{itemize}
+		\item[1.] $Z_n = \begin{pmatrix}
+				\overline{X}_n \\ \overline{Y}_n
+			\end{pmatrix}$
+		\item[2.] $Z_n = \begin{pmatrix}
+				\overline{X}_n - \overline{Y}_n
+			\end{pmatrix}$
+		\item[3.] $Z_n = \frac{1}{n} \sum_{i = 1}^{n} X_i Y_i$
+		\item[4.] $\overline{X}_n^2/\overline{Y}_n$
+	\end{itemize}
+\end{Exercise}
+\begin{Solution}
+	By properties of the Bernoulli distribution, $\textbb{E}[X_i] = \frac{1}{2}$ and $\text{Var}(X_i) = \frac{1}{4}$; by properties of the Exponential distribution, $\textbb{E}[Y_i] = 1$ and $\text{Var}[Y_i] = 1$.
+	\begin{itemize}
+		\item[1.] We know that the variance of the Bernoulli distribution with parameter $p$ is is $p \cdot (1 - p)$; since $p = \frac{1}{2}$, its variance is $\frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}$. $\frac{1}{4}$. The variance of the exponential distribution is $\frac{1}{\lambda^2}$, and since $\lambda = 1$, this means that we have variance $1$. Further, since all variables are assumed to be mutually independent, the covariance matrix must be
+			\begin{align*}
+				\Sigma = \begin{pmatrix}
+					\frac{1}{4} & 0 \\
+					0 & 1
+				\end{pmatrix}.
+			\end{align*}
+		\item[2.] Since $\text{Var}[X_i - Y_i] = \text{Var}[X_i] + \text{Var}[Y_i] = 1 + \frac{1}{4} = \frac{5}{4}$,
+			\begin{align*}
+			\sqrt{n}(Z_n - \mu) = \sqrt{n} \left( \overline{X}_n - \overline{Y}_n + \frac{1}{2} \right) \rightsquigarrow \mathcal{N}(0, \text{Var}(X_i - Y_i)) = \mathcal{N} \left(0, \frac{5}{4} \right).
+			\end{align*}
+		\item[3.] Since $X$ and $Y$ are independent, 
+			\begin{align*}
+				\text{Var}[X_i Y_i] &= \mathbb{E}[X_i^2Y_i^2] - \mathbb{E}[X_iY_i]^2
+			\\ &= \mathbb{E}[X_i]^2 \mathbb{E}[Y_i]^2 - \frac{1}{4}
+			\\ &= \left( \text{Var}[X_i] + \mathbb{E}[X_i]^2 \right) \left(\text{Var}[Y_i] + \mathbb{E}[Y_i]^2 \right) - \frac{1}{4} 
+			\\ &= \frac{1}{2} \cdot 2 - \frac{1}{4} = \frac{3}{4}.
+			\end{align*}
+			So, $\sigma^2 = \frac{3}{4}.$
+		\item[4.] We can use the delta method. We can let $g(x, y) = \frac{x^2}{y}$; some elementary calculus shows that
+			\begin{align*}
+				\nabla g(x, y) = \begin{bmatrix}
+					\frac{2x}{y} \\ -\frac{x^2}{y^2}
+				\end{bmatrix},
+			\end{align*}
+			and if we evaluate it at $(\mu_X, \mu_Y) = (1/2, 1)$, we get 
+			\begin{align*}
+				\nabla g(1/2, 1) = \begin{bmatrix}
+					1 \\ -\frac{1}{4}
+				\end{bmatrix}.
+			\end{align*}
+			The asymptotic variance is therefore 
+			\begin{align*}
+				\begin{bmatrix}
+					1 & -\frac{1}{4}
+				\end{bmatrix}
+				\begin{bmatrix}
+					\frac{1}{4} & 0 \\
+					0 & 1
+				\end{bmatrix}
+				\begin{bmatrix}
+					1 \\ -\frac{1}{4}
+				\end{bmatrix}
+				= \frac{5}{16}.
+			\end{align*}
+	\end{itemize}
+\end{Solution}
 \end{document}
