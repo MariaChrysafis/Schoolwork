@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.6)  6 FEB 2025 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.6)  6 FEB 2025 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,8 +706,7 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -724,6 +723,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count330
@@ -798,21 +798,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<f1.png, id=61, 435.6275pt x 373.395pt>
+ [4]
+<f1.png, id=66, 435.6275pt x 373.395pt>
 File: f1.png Graphic file (type png)
 <use f1.png>
-Package pdftex.def Info: f1.png  used on input line 210.
+Package pdftex.def Info: f1.png  used on input line 218.
 (pdftex.def)             Requested size: 217.81322pt x 186.69704pt.
-<f2.png, id=63, 480.79625pt x 398.48875pt>
+<f2.png, id=68, 480.79625pt x 398.48875pt>
 File: f2.png Graphic file (type png)
 <use f2.png>
-Package pdftex.def Info: f2.png  used on input line 215.
+Package pdftex.def Info: f2.png  used on input line 223.
 (pdftex.def)             Requested size: 240.39752pt x 199.24388pt.
- [4] [5 <./f1.png> <./f2.png>] [6]
+ [5 <./f1.png> <./f2.png>] [6]
 ! Undefined control sequence.
 <recently read> \textbb 
                         
-l.330 ...s of the Bernoulli distribution, $\textbb
+l.338 ...s of the Bernoulli distribution, $\textbb
                                                   {E}[X_i] = \frac{1}{2}$ an...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -823,7 +824,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \textbb 
                         
-l.330 ...of the Exponential distribution, $\textbb
+l.338 ...of the Exponential distribution, $\textbb
                                                   {E}[Y_i] = 1$ and $\text{V...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -838,13 +839,13 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25593 strings out of 474116
- 540549 string characters out of 5743683
- 1950187 words of memory out of 5000000
- 47566 multiletter control sequences out of 15000+600000
+ 25642 strings out of 474116
+ 541549 string characters out of 5743683
+ 1949187 words of memory out of 5000000
+ 47613 multiletter control sequences out of 15000+600000
  560681 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,17n,121p,520b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,17n,121p,520b,1095s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -858,7 +859,7 @@ exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
 /texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb></usr/lo
 cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (8 pages, 213121 bytes).
+Output written on main.pdf (8 pages, 214456 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream

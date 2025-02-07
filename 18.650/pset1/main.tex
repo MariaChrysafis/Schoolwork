@@ -137,9 +137,17 @@
 	The covariance is $\text{Cov}[X, XY] = \mathbb{E}[X^2Y] - \mathbb{E}[X] \mathbb{E}[XY] = 0.$ $\boxed{A}$.
 \end{Solution}
 \begin{Exercise}
+	Let $X$ be an exponential random variable with parameter $\frac{1}{2}$ that model sthe lifetime (in years) of a lightbulb. What is (approximately) the probability that the lightbulb will last at least two years?
 \end{Exercise}
+\begin{Solution}
+	The exponential random variable has CDF of $1 - e^{-\lambda x}$, so the probability that it lasts two or fewer years is $1 - e^{-2 \cdot 1} = 1 - e^{-1}$. The probability that it lasts more than two years is therefore $e^{-1}$, which is closest to $\boxed{C}$.
+\end{Solution}
 \begin{Exercise}
+	Given that the lightbulb has lasted for at least 3 years, what is approximately the probability that it will last for at least two more years?
 \end{Exercise}
+\begin{Solution}
+	Exponential distribution is memoryless, so $\boxed{C}$ (same as previous question).
+\end{Solution}
 \begin{Exercise}
 	Let$X_1, \ldots X_n$ be i.i.d. with mean $\mu$ and variance $\sigma^2$. What is $\mathbb{E}\left[\sum_{i = 1}^n X_i\right]$?
 \end{Exercise}
