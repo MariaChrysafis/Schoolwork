@@ -4,7 +4,7 @@
 \graphicspath{ {/} }
 \author{Maria Chrysafis}
 \date{\today}
-\title{18.650 Homework 1}
+\title{All of Statistics Chapter 3}
 \begin{document}
 \maketitle
 \section{Expectation}
@@ -73,9 +73,31 @@
 	where $X$ denotes the number of tosses required.
 \end{Solution}
 \begin{Exercise}
+	Prove theorem 3.6 for discrete random variables.
 \end{Exercise}
+\begin{Solution}
+	For discrete random variables, the expected value of $X$ is
+	\begin{align*}
+		\sum_i \Prob[X = x_i] x_i,
+	\end{align*}
+	so the expected value of $r(X)$ is 
+	\begin{align*}
+		\sum_i \Prob[r(X) = r_i] r_i = \sum_i \Prob[r(X) = r(x_i)] x_i.
+	\end{align*}
+\end{Solution}
 \begin{Exercise}
+	Let $X$ be a continous random variable with CDF $F$. Suppose that $\Prob[X >0] = 1$ and that $\E[X]$ exists. Show that $\E[X] = \int_0^{\infty} \Prob[X > x] \dd x.$
 \end{Exercise}
+\begin{Solution}
+We know that $\Prob[X > x]= \int_{x}^{\infty} f_X(y) \dd y$, so
+\begin{align*}
+	\int_0^{\infty} \Prob[X > x] \dd x &= \int_0^{\infty} \int_x^{\infty} f_X(y) \dd y \dd x 
+					\\ &= \int_0^{\infty} \int_{0}^{y} f_X(y) \dd x \dd y
+					\\ &= \int_0^{\infty} f_X(y) y \dd y
+					\\ &= \mathbb{E}[X],
+\end{align*}
+from which the desired follows.
+\end{Solution}
 \begin{Exercise}
 	Prove theorem 3.17.
 \end{Exercise}
@@ -101,7 +123,11 @@
 	so $\E[Y^2] = \Var[Y] + \E[Y]^2 = n (n - 1) \sigma^2$. Plugging this into the prior equation, $\E[S_n^2] = \frac{1}{n (n - 1)} \cdot n(n -1)\sigma^2 = \sigma^2.$
 \end{Solution}
 \begin{Exercise}
+	Let $X_1, X_2, \ldots X_n$ be $\Norm[0, 1]$ random variables and let $\overline{X}_n = n^{-1} \sum_{i = 1}^{n} X_i$. Plot $\overline{X}_n$ verus $n$ for $n = 1, \ldots , 10,000$. Repeat for $X_1, X_2, \ldots X_n \sim \Cauchy$. Explain why there is such a difference.
 \end{Exercise}
+\begin{Solution}
+	See the corresponding $\texttt{.ipynb}$ file for graphs. Expectedly, the sample mean for the normal distribution appears to converge to $1$, but the sample mean of the Cauchy sequence does not converge (since the Cauchy sequence is so fat-tailed, it does not have a well-defined mean).
+\end{Solution}
 \begin{Exercise}
 	Let $X \sim \Norm[0, 1]$ and let $Y = e^{X}$. Find $\E[Y]$ and $\Var[Y].$ 
 \end{Exercise}
