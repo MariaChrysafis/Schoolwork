@@ -1,0 +1,35 @@
+\usepackage[most]{tcolorbox}
+\usepackage{cleveref}
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=0.8in,right=0.8in,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{array}
+\makeatletter
+\crefformat{tcb@cnt@Example}{example~#2#1#3}
+\Crefformat{tcb@cnt@Example}{Example~#2#1#3}
+\makeatother
+\newtcolorbox{ExerciseBase}[1][]{%
+  breakable,
+  fonttitle = \bfseries,
+  colframe = blue!75!black,
+  colback = blue!10,
+  title = {Question},
+  #1
+}
+
+\NewDocumentEnvironment{Exercise}{}{%
+  \begin{ExerciseBase}%
+}{%
+  \end{ExerciseBase}%
+}
+\newenvironment{Solution}{%
+     \setlength\parindent{0pt}\par\medskip\textbf{Answer:}\quad}{%
+     \hfill\tiny\par\medskip}
+% \newcommand{\Tr}[1]{\operatorname{Tr}\left(#1\right)}
+

@@ -1,0 +1,10 @@
+% \documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/6.1800/chrysafis}
+\graphicspath{ {/} }
+\begin{document}
+\section*{Recitation 2: DNS}
+\begin{Exercise}
+	What is the purpose of DNS?
+\end{Exercise}
+\end{document}

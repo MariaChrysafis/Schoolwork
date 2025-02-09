@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
+\graphicspath{ {/} }
+\author{Maria Chrysafis}
+\date{\today}
+\title{18.650 Homework 1}
+\begin{document}
+\maketitle
+\section{Random Variables}
+\begin{Exercise}
+	
+\end{Exercise}
+\begin{Exercise}
+\end{Exercise}
+\begin{Exercise}
+\end{Exercise}
+\begin{Exercise}
+	Let $X$ have probability density function
+	\begin{align*}
+		f_X(x) = \begin{cases}
+			1/4 & 0 < x < 1 \\
+			3/8 & 3 < x < 5 \\
+			0 & \text{otherwise}
+		\end{cases}
+	\end{align*}
+	\begin{itemize}
+		\item[(a)] Find the cumulative distribution function of $X$.
+		\item[(b)] Let $Y = \frac{1}{X}$. Find the probability density function $f_Y(y)$ for $Y$. 
+	\end{itemize}
+\end{Exercise}
+\begin{Solution}
+	\begin{itemize}
+		\item[(a)] There are five cases we have to consider: $x \le 0$, $0 < x < 1$, $1 \le x \le 3$, $3 < x < 5$, and $x \ge 5$. The first and last cases are straight-forward, when $x \le 0$, $F_X(x) = 0$ and when $x \ge 5$, $F_X(x) = 1$. As for the case when $0 < x < 1$, 
+			\begin{align*}
+				F_X(x) = \int_{0}^{x} f_X(x) \dd x = \int_0^{x} \frac{1}{4} \dd x = \frac{1}{4} x.
+			\end{align*}
+			When $1 \le x \le 3$, the cdf is $\frac{1}{4}$, and when $3 < x < 5$, the CDF is 
+			\begin{align*}
+				F_X(x) = \int_0^{x} f_X(x) \dd x = \frac{1}{4} + \int_3^{x} f(x) \dd x = \frac{1}{4} + \frac{3}{8} \cdot(x - 3) = \frac{3x - 7}{8}.
+			\end{align*}
+			Putting this all together, 
+			\begin{align*}
+				F_X(x) = \begin{cases}
+					0 & x \le 0 \\
+					x/4 & 0 < x < 1 \\
+					1/4 & 1 \le x \le 3 \\
+					(3x - 7)/8 & 3 < x \le 5 \\
+					1 & x > 5
+				\end{cases}.
+			\end{align*}
+
+	\end{itemize}
+\end{Solution}
+\end{document}
