@@ -72,4 +72,41 @@
 	\end{align*}
 	where $X$ denotes the number of tosses required.
 \end{Solution}
+\begin{Exercise}
+\end{Exercise}
+\begin{Exercise}
+\end{Exercise}
+\begin{Exercise}
+	Prove theorem 3.17.
+\end{Exercise}
+\begin{Solution}
+	By linearity of expectation
+	\begin{align*}
+		\E[\overline{X}_n] = \E \left[ \frac{X_1 + X_2 + \ldots + X_n}{n} \right] = \frac{\E[X_1] + \E[X_2] + \ldots + \E[X_n]}{n} = \frac{n \mu}{n} = \mu.
+	\end{align*}
+	Additionally,
+	\begin{align*}
+		\Var[\overline{X}_n] = \Var \left[ \frac{X_1 + \ldots + X_n}{n} \right] = \frac{1}{n^2} \Var[X_1 + \ldots + X_n] = \frac{1}{n^2} \left( \Var[X_1] + \ldots + \Var[X_n] \right) = \frac{\sigma^2}{n^2}.
+	\end{align*}
+	The expected value of the sample variance is
+	\begin{align*}
+		S_n &= \E \left[ \frac{1}{n - 1} \sum_{i = 1}^n (X_i - \overline{X}_n)^2 \right]
+		 \\ &= \frac{n}{n - 1} \cdot \mathbb{E}\left[ \left( X_1 - \overline{X}_n \right)^2 \right]
+		 \\ &= \frac{1}{n(n - 1)}\cdot \E \left[ \left( (n - 1)X_1 - X_2 - X_3\ldots - X_n \right)^2 \right].
+	\end{align*}
+	If we let $Y = (n - 1)X_1 - X_2 - \ldots - X_n$, then 
+	\begin{align*}
+		\Var[Y] = \Var[(n - 1)X_1] + \Var[X_2] + \ldots + \Var[X_n] = (n - 1)^2 \sigma + (n - 1) \sigma = n (n - 1) \sigma,
+	\end{align*}
+	so $\E[Y^2] = \Var[Y] + \E[Y]^2 = n (n - 1) \sigma^2$. Plugging this into the prior equation, $\E[S_n^2] = \frac{1}{n (n - 1)} \cdot n(n -1)\sigma^2 = \sigma^2.$
+\end{Solution}
+\begin{Exercise}
+\end{Exercise}
+\begin{Exercise}
+	Let $X \sim \Norm[0, 1]$ and let $Y = e^{X}$. Find $\E[Y]$ and $\Var[Y].$ 
+\end{Exercise}
+\begin{Solution}
+	The MGF of $X$ is $\psi_X(t) = \E[e^{Xt}] = e^{\frac{1}{2}t^2}$, so 
+	$\E[Y] = \sqrt{e}$ and $\E[Y^2] = e^2$. It follows that $\Var[Y] = \E[Y^2] - \E[Y]^2 = e^2 - e.$
+\end{Solution}
 \end{document}

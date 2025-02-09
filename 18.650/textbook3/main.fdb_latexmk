@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1739109740.10561 "main.tex" "main.pdf" "main" 1739109740.95898 2
-  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1739107403.33461 1247 637391aff83ac402080dc9d37d2fa2b1 ""
+["pdflatex"] 1739112697.16579 "main.tex" "main.pdf" "main" 1739112698.03824 2
+  "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1739110555.26882 1278 6f7dfda9c029ab8733aa802c463074f8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -32,6 +32,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -184,8 +185,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1717734193.15744 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1717734146 8221447 731d28afb0c679c0dc47d3bbcf8d4b61 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1739109740.89029 211 b84d637b3421086e652c38619ea95c6f "pdflatex"
-  "main.tex" 1739109738.9924 3731 77ba2156415eae2550966c2ad31a891a ""
+  "main.aux" 1739112697.96767 211 4e9d756ef7f454ba364b7e4be8f49771 "pdflatex"
+  "main.tex" 1739112696.55484 5399 6e2109deed3010ca4644ba68d4b1582b ""
   (generated)
   "main.aux"
   "main.log"
