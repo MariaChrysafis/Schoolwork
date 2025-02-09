@@ -22,8 +22,54 @@
 	Show that $\Var[X] = 0$ if and only if there is a constant $c$ such that $\Prob[X = c]= 1.$
 \end{Exercise}
 \begin{Solution}
-	We first prove the easier direction, namely that if $\Prob[X = c] = 1$, then $\V[X] = 0$. In this case, $\E[X^2] = c^2$ and $\E[X]^2 = c^2$ too, so $\V[X] = \E[X^2] - \E[X]^2 = 0$, as desired. 
+	We first prove the easier direction, namely that if $\Prob[X = c] = 1$, then $\Var[X] = 0$. In this case, $\E[X^2] = c^2$ and $\E[X]^2 = c^2$ too, so $\Var[X] = \E[X^2] - \E[X]^2 = 0$, as desired. 
 
-	As for the other direction, 
+	As for the other direction, by Jensen's inequality,
+	\begin{align*}
+		\mathbb{E}[X^2] \ge \mathbb{E}[X]^2 \Longleftrightarrow \Var[X] \ge 0,
+	\end{align*}
+	with equality holding iff $X$ is constant, i.e. $\Prob[X = c] = 1$ for some $c$. 
+\end{Solution}
+\begin{Exercise}
+	Let $X_1, \ldots , X_n \sim \Unif[0, 1]$ and let $Y_n = \max \left( X_1, \ldots X_n \right)$. Find $\mathbb{E}[Y_n]$.
+\end{Exercise}
+\begin{Solution}
+	Consider the CDF of $Y_n$:
+	\begin{align*}
+		F_{Y_n}(x) = \Prob[Y_n \le x] = \Prob [X_1, X_2, \ldots, X_n \le x] = \Prob [X_1 \le x]^n = x^n.
+	\end{align*}
+	The PDF of $Y_n$ is therefore $f_{Y_n}(x)\frac{\dd}{\dd x} \left[ x^n \right] = n x^{n - 1}$, and so
+	\begin{align*}
+		\E[Y_n] = \int f_{Y_n}(x) \cdot x \dd x = \int_0^{1} n x^{n - 1} \cdot x \dd x= \int_0^1 nx^n \dd x = \frac{n}{n + 1}.
+	\end{align*}
+\end{Solution}
+\begin{Exercise}
+	A particle starts at the origin of the real line and moves along the line in jumps of one unit. For each jump the probability is $p$ that the particle will jump one unit to the left and the probability is $1 - p$ that the particle will jump one unit to the right. Let $X_n$ be theposition of the particle after $n$ units. Find $\E[X_n]$ and $\Var[X_n]$.
+\end{Exercise}
+\begin{Solution}
+	When $n = 0$, $\E[X_n] = 0$, and when $n > 0$,
+	\begin{align*}
+		\E[X_n] &= \E[p \cdot (X_{n - 1} - 1)] + \E[(1 - p) \cdot (X_{n - 1} + 1)]
+		     \\ &= p \E[X_{n - 1}] - p + (1 - p) \E[X_{n - 1}] + 1 - p
+		     \\ &= \E[X_{n - 1}] + 1 - 2p.
+	\end{align*}
+	Therefore, by induction $\E[X_n] = (1 - 2p) \cdot n.$ 
+
+	As for the variance, let $Y_i$ denote whether or not you move left ($-1$) or right ($+1$) on the $i$th jump.Then,
+	\begin{align*}
+		\Var[X_n] &= \Var[Y_1 + Y_2 + \ldots + Y_n]
+		       \\ &= n \Var[Y_1]
+		       \\ &= n (4p^2 - 4p).
+	\end{align*}
+\end{Solution}
+\begin{Exercise}
+	A fair coin is tossed until a head is obtained. What is the expected number of tosses that will be required?
+\end{Exercise}
+\begin{Solution}
+	If we let $X_i$ denote the event that the first time we get heads is on the $i$th toss, then $\Prob[X_i] = \frac{1}{2^i}$, so
+	\begin{align*}
+		\E[X] = \sum_{i = 1}^{\infty} \frac{i}{2^i} = 2,
+	\end{align*}
+	where $X$ denotes the number of tosses required.
 \end{Solution}
 \end{document}
