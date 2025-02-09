@@ -154,4 +154,20 @@ from which the desired follows.
 		\item[(b)] See the $\texttt{.ipynb}$ file. There is expectedly, high variance, since the variance is a linear factor of $n$.
 	\end{itemize}
 \end{Solution}
+\begin{Exercise}
+	Prove the formulas given in the table at the beginning of Section 3.4 for the Bernoulli, Poisson, Uniform, Exponential, Gamma, and Beta.
+\end{Exercise}
+\begin{Solution}
+\begin{itemize}
+	\item \textbf{Bernoulli}: For the Bernoulli distribution, the mean is clearly $p$, since with probability $p$, the event happens $(+1)$ and with probability $1 - p$, the event does not happen $(-1)$. The variance can be computed by noting that $\mathbb{E}[X^2] = p$ and $\mathbb{E}[X]^2 = p^2$, so $\Var[X] = p (1 - p)$.
+	\item \textbf{Poisson}: 
+	\item \textbf{Exponential}: The moment generating function of the exponential distribution is 
+	\begin{align*}
+		M_X(t) = \mathbb{E}[e^{Xt}] = \int_0^{\infty} e^{tx} \lambda e^{-\lambda x} \dd x = \lambda \int_0^{\infty} e^{(t - \lambda) x} \dd x = \lambda \cdot \frac{e^{(t - \lambda)x}}{t - \lambda} \Big|_0^{\infty} = \frac{\lambda}{\lambda - t}.
+	\end{align*}
+	Some computation yields that $M_X'(t) = \lambda (\lambda - t)^{-2}$ and $M_X''(t)= 2\lambda (\lambda - t)^{-3}$, so $\E[X] = M_x'(0) = \frac{1}{\lambda} = \beta$ and $\E[X^2] = M_X''(0) = \frac{2}{\lambda^2}.$ The variance is therefore $\Var[X] = \E[X^2]- \E[X]^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2}= \frac{1}{\lambda^2} = \beta^2.$
+	\item \textbf{Gamma}:
+	\item \textbf{Beta}: 
+\end{itemize}
+\end{Solution}
 \end{document}
