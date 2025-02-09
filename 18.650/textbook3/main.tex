@@ -126,7 +126,7 @@ from which the desired follows.
 	Let $X_1, X_2, \ldots X_n$ be $\Norm[0, 1]$ random variables and let $\overline{X}_n = n^{-1} \sum_{i = 1}^{n} X_i$. Plot $\overline{X}_n$ verus $n$ for $n = 1, \ldots , 10,000$. Repeat for $X_1, X_2, \ldots X_n \sim \Cauchy$. Explain why there is such a difference.
 \end{Exercise}
 \begin{Solution}
-	See the corresponding $\texttt{.ipynb}$ file for graphs. Expectedly, the sample mean for the normal distribution appears to converge to $1$, but the sample mean of the Cauchy sequence does not converge (since the Cauchy sequence is so fat-tailed, it does not have a well-defined mean).
+	See the $\texttt{.ipynb}$ file. Expectedly, the sample mean for the normal distribution appears to converge to $1$, but the sample mean of the Cauchy sequence does not converge (since the Cauchy sequence is so fat-tailed, it does not have a well-defined mean).
 \end{Solution}
 \begin{Exercise}
 	Let $X \sim \Norm[0, 1]$ and let $Y = e^{X}$. Find $\E[Y]$ and $\Var[Y].$ 
@@ -135,5 +135,23 @@ from which the desired follows.
 	The MGF of $X$ is $\psi_X(t) = \E[e^{Xt}] = e^{\frac{1}{2}t^2}$, so 
 	$\E[Y] = \sqrt{e}$ and $\E[Y^2] = e^2$. It follows that $\Var[Y] = \E[Y^2] - \E[Y]^2 = e^2 - e.$
 \end{Solution}
+\begin{Exercise}
+	Let $Y_1, Y_2, \ldots $ be independent random variables such that $\Prob[Y_i = 1] = \Prob[Y_i = -1] = \frac{1}{2}$. Let $X_n = \sum_{i = 1}^n Y_i.$ Think of $Y_i$ as \enquote{the stock price increased by one dollar}, $Y_i = -1$ as \enquote{the stock price decreased by one dollar}, and $X_n$ as the value of the stock on day $n$.
+	\begin{itemize}
+		\item[(a)] Find $\E[X_n]$ and $\Var[X_n]$.
+		\item[(b)] Stumlate $X_n$ and plot $X_n$ versus $n$ for $n = 1, 2, \ldots 10,000$. Repeat the whole stimulation several times. Notice two things. First, it is easy to see patterns in the sequence even though it is random. Second, you will find that the four runs look very different even though they were generated the same way. How do the calcualtions in (a) explain the second observation?
+	\end{itemize}
+\end{Exercise}
+\begin{Solution}
+	\begin{itemize}
+		\item[(a)] 
+		\begin{align*}
+			\E[X_n] &= \E \left[ \sum_{i = 1}^n Y_i \right] = \sum_{i = 1}^n \E[Y_i] = 0
+		\end{align*}
+		\begin{align*}
+			\Var[X_n] &= \Var \left[ \sum_{i = 1}^n Y_i \right] = \sum_{i = 1}^n \Var[Y_i] = \sum_{i = 1}^n 1 = n.
+		\end{align*}
+		\item[(b)] See the $\texttt{.ipynb}$ file. There is expectedly, high variance, since the variance is a linear factor of $n$.
+	\end{itemize}
+\end{Solution}
 \end{document}
-
