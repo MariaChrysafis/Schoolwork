@@ -1,0 +1,29 @@
+% \documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
+\graphicspath{ {/} }
+\author{Maria Chrysafis}
+\date{\today}
+\title{18.650 Homework 1}
+\begin{document}
+\maketitle
+\section{Expectation}
+\begin{Exercise}
+	Suppose we play a game where we start with $c$ dollars. On each play of the game, you either double or halve your money, with equal probability. What is your expected fortune after $n$ trials?
+\end{Exercise}
+\begin{Solution}
+	Let $X_i$ denote the amount of money you have after playing the game $i$ times. When $i = 0$, by definition, $\Prob[X_0 = c] = 1$, and so, $\E[X_0] = c$. When $i > 0$, 
+	\begin{align*}
+		\E[X_i] = \E \left[ \frac{1}{2} \cdot \left(2 \cdot X_{i - 1} \right) + \frac{1}{2} \cdot \left( \frac{1}{2} \cdot X_i \right) \right] = \E \left[\frac{5}{4} X_{i - 1} \right] = \frac{5}{4} \E \left[ X_{i - 1} \right].
+	\end{align*}
+	It immediately follows that $\E[X_i] = \left( \frac{5}{4} \right)^i \cdot c$. Thus, after $n$ trials, your expected fortune is $c \cdot \left( \frac{5}{4}\right)^n$.
+\end{Solution}
+\begin{Exercise}
+	Show that $\Var[X] = 0$ if and only if there is a constant $c$ such that $\Prob[X = c]= 1.$
+\end{Exercise}
+\begin{Solution}
+	We first prove the easier direction, namely that if $\Prob[X = c] = 1$, then $\V[X] = 0$. In this case, $\E[X^2] = c^2$ and $\E[X]^2 = c^2$ too, so $\V[X] = \E[X^2] - \E[X]^2 = 0$, as desired. 
+
+	As for the other direction, 
+\end{Solution}
+\end{document}
