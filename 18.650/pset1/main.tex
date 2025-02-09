@@ -2,7 +2,11 @@
 \documentclass[a4paper]{article}
 \usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
 \graphicspath{ {/} }
+\author{Maria Chrysafis}
+\date{\today}
+\title{18.650 Homework 1}
 \begin{document}
+\maketitle
 \section{probability review}
 \begin{Exercise}
 	Let $X$ be a random variable taking values between $0$ and $\pi$ with pdf given by $f(x) = c\sin(x), x \in [0, \pi].$ What is the value of $c$?
@@ -140,13 +144,13 @@
 	Let $X$ be an exponential random variable with parameter $\frac{1}{2}$ that model sthe lifetime (in years) of a lightbulb. What is (approximately) the probability that the lightbulb will last at least two years?
 \end{Exercise}
 \begin{Solution}
-	The exponential random variable has CDF of $1 - e^{-\lambda x}$, so the probability that it lasts two or fewer years is $1 - e^{-2 \cdot 1} = 1 - e^{-1}$. The probability that it lasts more than two years is therefore $e^{-1}$, which is closest to $\boxed{C}$.
+	The exponential random variable has CDF of $1 - e^{-\lambda x}$, so the probability that it lasts two or fewer years is $1 - e^{-2 \cdot 2} = 1 - e^{-4}$. The probability that it lasts more than two years is therefore $e^{-4}$, which is closest to $\boxed{B}$.
 \end{Solution}
 \begin{Exercise}
 	Given that the lightbulb has lasted for at least 3 years, what is approximately the probability that it will last for at least two more years?
 \end{Exercise}
 \begin{Solution}
-	Exponential distribution is memoryless, so $\boxed{C}$ (same as previous question).
+	Exponential distribution is memoryless, so $\boxed{B}$ (same as previous question).
 \end{Solution}
 \begin{Exercise}
 	Let$X_1, \ldots X_n$ be i.i.d. with mean $\mu$ and variance $\sigma^2$. What is $\mathbb{E}\left[\sum_{i = 1}^n X_i\right]$?
@@ -213,14 +217,14 @@
 					1 & x> \frac{1}{n}
 				\end{cases}.
 			\end{align*}
-		\begin{figure}[t]
+		\begin{figure}[hbt!]
 			\centering
-			\includegraphics[scale=0.5]{f1}
+			\includegraphics[scale=0.3]{f1}
 			\caption{This is the cdf for $X_n$, when $n = 4$.}
 		\end{figure}
-		\begin{figure}[t]
+		\begin{figure}[hbt!]
 			\centering
-			\includegraphics[scale=0.5]{f2}
+			\includegraphics[scale=0.3]{f2}
 			\caption{This is the cdf for $X$.}
 		\end{figure}
 		\item[2.] We know that for all $\epsilon$,
@@ -270,9 +274,9 @@ Let $X \sim \mathcal{N}(1, 2.25)$. Compute the following probabilities (show you
 \begin{Solution}
 	\begin{itemize}
 		\item[1.] Since $X$ is normally distributed around $1$, by symmetry, $\mathbb{P}[X > 1] = 0.5.$ 
-		\item[2.] We know that $\mathbb{P}[|X - 2| \le 1] = \mathbb{P}[1 \le X \le 3]$. If we let $Y$ be $\frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$, then we can rewrite this as $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right]$. Since $Y$ is standard normal, we can now reference the standard normal table, which tells us that $\mathbb{P}\left[Y \le \frac{4}{3}\right] \approx 0.9082$ and $\mathbb{P}\left[Y \le 0\right] = 0.5$, so $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx 0.4082.$
-		\item[3.] Again, we can use a similar technique as the previous part and let $Y= \frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$. Then, it becomes clear that $\mathbb{P}[|X| < 1] =\mathbb{P}[-1 \le X \le 1] =\mathbb{P}\left[ -\frac{4}{3} \le Y \le 0 \right]$, which by symmetry means that $\mathbb{P}[|X| \le 1] = \mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx 0.4082.$
-		\item[4.] Since $(X - 1)^2 - 2 = X^2 - 2X - 1$, $\mathbb{P}[X^2 - 2X - 1 > 0] = \mathbb{P}[(X - 1)^2 - 2 > 0] = \mathbb{P}[(X - 1)^2 > 2] = \mathbb{P}[1 - \sqrt{2} \le X \le 1 + \sqrt{2}]$. Letting $Y = \frac{X - \mu}{\sigma}$, we reduce this to $\mathbb{P}\left[-\frac{\sqrt{2}}{1.5} < X < \frac{\sqrt{2}}{1.5}\right]$. Using a standard normal table, we can compute this to be around $0.3472$.
+		\item[2.] We know that $\mathbb{P}[|X - 2| \le 1] = \mathbb{P}[1 \le X \le 3]$. If we let $Y$ be $\frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$, then we can rewrite this as $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right]$. Since $Y$ is standard normal, we can now reference the standard normal table, which tells us that $\mathbb{P}\left[Y \le \frac{4}{3}\right] \approx 0.9082$ and $\mathbb{P}\left[Y \le 0\right] = 0.5$, so $\mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx \boxed{0.4082}.$
+		\item[3.] Again, we can use a similar technique as the previous part and let $Y= \frac{X - \mu}{\sigma} = \frac{X - 1}{1.5}$. Then, it becomes clear that $\mathbb{P}[|X| < 1] =\mathbb{P}[-1 \le X \le 1] =\mathbb{P}\left[ -\frac{4}{3} \le Y \le 0 \right]$, which by symmetry means that $\mathbb{P}[|X| \le 1] = \mathbb{P}\left[0 \le Y \le \frac{4}{3}\right] \approx \boxed{0.4082}.$
+		\item[4.] Since $(X - 1)^2 - 2 = X^2 - 2X - 1$, $\mathbb{P}[X^2 - 2X - 1 > 0] = \mathbb{P}[(X - 1)^2 - 2 > 0] = \mathbb{P}[(X - 1)^2 > 2] = \mathbb{P}[1 - \sqrt{2} \le X \le 1 + \sqrt{2}]$. Letting $Y = \frac{X - \mu}{\sigma}$, we reduce this to $\mathbb{P}\left[-\frac{\sqrt{2}}{1.5} < X < \frac{\sqrt{2}}{1.5}\right]$. Using a standard normal table, we can compute this to be around $\boxed{0.3472}$.
 	\end{itemize}
 \end{Solution}
 \begin{Exercise}
