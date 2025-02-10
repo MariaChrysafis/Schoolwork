@@ -160,7 +160,11 @@ from which the desired follows.
 \begin{Solution}
 \begin{itemize}
 	\item \textbf{Bernoulli}: For the Bernoulli distribution, the mean is clearly $p$, since with probability $p$, the event happens $(+1)$ and with probability $1 - p$, the event does not happen $(-1)$. The variance can be computed by noting that $\mathbb{E}[X^2] = p$ and $\mathbb{E}[X]^2 = p^2$, so $\Var[X] = p (1 - p)$.
-	\item \textbf{Poisson}: 
+	\item \textbf{Poisson}: The moment generating function of the Poisson distribution is
+	\begin{align*}
+		\mathbb{E}[e^{tX}] &= \sum_{k = 0}^{\infty} \frac{\lambda^k e^{-\lambda}}{k!} \cdot e^{tk}
+		
+	\end{align*}
 	\item \textbf{Exponential}: The moment generating function of the exponential distribution is 
 	\begin{align*}
 		M_X(t) = \mathbb{E}[e^{Xt}] = \int_0^{\infty} e^{tx} \lambda e^{-\lambda x} \dd x = \lambda \int_0^{\infty} e^{(t - \lambda) x} \dd x = \lambda \cdot \frac{e^{(t - \lambda)x}}{t - \lambda} \Big|_0^{\infty} = \frac{\lambda}{\lambda - t}.

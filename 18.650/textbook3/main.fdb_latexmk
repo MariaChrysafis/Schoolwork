@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739125959.68447 "main.tex" "main.pdf" "main" 1739125960.58882 2
+["pdflatex"] 1739146939.69753 "main.tex" "main.pdf" "main" 1739146940.70816 2
   "/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis.sty" 1739122640.13988 1338 cba82e24764c260e461d517264d535e0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -191,8 +191,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1717734193.15744 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1717734146 8221447 731d28afb0c679c0dc47d3bbcf8d4b61 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1739125960.49174 211 7fee33f2f23c68a47c119490b12781b9 "pdflatex"
-  "main.tex" 1739125959.02143 9467 d3f84050227fee22a8fe5ab065ddea46 ""
+  "main.aux" 1739146940.62039 211 7fee33f2f23c68a47c119490b12781b9 "pdflatex"
+  "main.tex" 1739146937.99061 9654 84b48e62a74fbf84c285cf95f9e60721 ""
   (generated)
   "main.aux"
   "main.log"
