@@ -1,0 +1,84 @@
+% \documentclass{article}
+\documentclass[a4paper]{article}
+\usepackage{/Users/mariachrysafis/Documents/Schoolwork/18.650/chrysafis}
+\graphicspath{ {/} }
+\author{Maria Chrysafis}
+\date{\today}
+\title{Computer Vision 6.S058 Problem Set 1}
+\begin{document}
+\maketitle
+\section{Problem 1}
+\section{Problem 2}
+We are in effect given the equation
+\begin{align*}
+\begin{bmatrix}
+    x \\ y
+\end{bmatrix}
+= \alpha \cdot P \cdot R_x (\theta) \cdot \begin{bmatrix}
+    X \\ Y \\ Z
+\end{bmatrix}
++ \begin{bmatrix}
+    x_0 \\ y_0
+\end{bmatrix},
+\end{align*}
+where $R_x(\theta)$ represents a rotation amtrix around the $X$-axis by an angle $\theta$, $P$ is a projection matrix that reduces 3D world coordinates to 2D image coordinates, $\alpha$ is a scaling factor to account for the camera sensor size, and $(x_0, y_0)$ represents the image coordinates of the origin of the camera coordinate system.
+
+In this case, the rotation matrix around the $X$ axis by an angle $\theta$ is 
+\begin{align*}
+    R_x(\theta) = \begin{bmatrix}
+    1 & 0 & 0 \\
+    0 & \cos \theta & -\sin \theta \\
+    0 & \sin \theta & \cos \theta
+    \end{bmatrix}
+\end{align*}
+and the projection matrix is
+\begin{align*}
+    P = \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & \cos \theta & -\sin \theta \\
+    \end{bmatrix}.
+\end{align*}
+Therefore, this equation becomes
+\begin{align*}
+    \begin{bmatrix}
+        x \\ y
+    \end{bmatrix}
+    &= \alpha \cdot \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & \cos \theta & -\sin \theta \\
+    \end{bmatrix} \cdot \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & \cos \theta & -\sin \theta \\
+        0 & \sin \theta & \cos \theta
+        \end{bmatrix} \cdot \begin{bmatrix}
+        X \\ Y \\ Z
+    \end{bmatrix}
+    + \begin{bmatrix}
+        x_0 \\ y_0
+    \end{bmatrix}
+    \\ &= \alpha \cdot
+    \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & \cos^2 \theta & -\sin^2 \theta & -2 \cos \theta \sin \theta \\
+    \end{bmatrix}\cdot \begin{bmatrix}
+        X \\ Y \\ Z
+    \end{bmatrix}+ \begin{bmatrix}
+        x_0 \\ y_0
+    \end{bmatrix}
+    \\ &= \begin{bmatrix}
+        \alpha (X + x_0) \\
+        \alpha (\cos \theta Y - \sin \theta Z + y_0)
+    \end{bmatrix}.
+\end{align*}
+We know that $(0, 0, 0)$ projects to $(0, 0)$, i.e. when $X = 0, Y = 0$, and $z = 0$, we get $x = 0$ and $y = 0$. Therefore, the equation becomes
+\begin{align*}
+    x &= \alpha (0) + x_0 = 0 \Longrightarrow x_0 = 0  \\
+    y &= \alpha (\cos \theta (0)-\sin \theta (0)) + y_0 = 0 \Longrightarrow y_0 = 0.
+\end{align*}
+So, $x_0 = 0$ and $y_0 = 0$. Now, applying the second condition (that $(1, 0, 0)$ projects to $(3, 0)$), we get that
+\begin{align*}
+    x = \alpha(1) + x_0 = 3 \Longrightarrow \alpha = 3 \\
+    y = \alpha(\cos \theta (1)-\sin \theta (0)) + y_0.
+\end{align*}
+So, $\alpha = 3$, $x_0 = 0$, and $y_0 = 0$.
+\end{document}  
