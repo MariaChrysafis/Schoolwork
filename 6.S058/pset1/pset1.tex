@@ -113,4 +113,87 @@ Some algebra shows that
 \end{align*}
 So, 
 $$\frac{\partial^2 Z}{\partial x^2} = \frac{\partial^2 Z}{\partial y^2} = \frac{\partial^2 Z}{\partial x \partial y} = 0.$$
-\end{document}  
+\section{Problem 4}
+\section{Problem 5}
+\section{Problem 6}
+\section{Problem 7}
+\subsection*{Part (a): Equations Relating Angles of Rays Passing Through a Plano-Convex Lens}
+
+For a plano-convex lens, the front surface has a radius of curvature \( R \), and the back surface is flat. The equations relating the angles of rays passing through the lens are derived using Snell's Law and the paraxial approximation (small angles).
+
+\begin{enumerate}
+    \item \textbf{Snell's Law at the First Surface (Curved Surface):}
+    \[
+    n_1 \sin(\theta_1) = n_2 \sin(\theta_2)
+    \]
+    Where:
+    \begin{itemize}
+        \item \( n_1 \) is the refractive index of the medium before the lens (usually air, \( n_1 \approx 1 \)).
+        \item \( n_2 \) is the refractive index of the lens material.
+        \item \( \theta_1 \) is the angle of incidence.
+        \item \( \theta_2 \) is the angle of refraction.
+    \end{itemize}
+
+    \item \textbf{Angle of Incidence at the First Surface:}
+    \[
+    \theta_1 = \alpha + \phi
+    \]
+    Where:
+    \begin{itemize}
+        \item \( \alpha \) is the angle the ray makes with the optical axis before refraction.
+        \item \( \phi \) is the angle the normal to the surface makes with the optical axis.
+    \end{itemize}
+
+    \item \textbf{Angle of Refraction at the First Surface:}
+    \[
+    \theta_2 = \phi + \beta
+    \]
+    Where:
+    \begin{itemize}
+        \item \( \beta \) is the angle the refracted ray makes with the optical axis.
+    \end{itemize}
+
+    \item \textbf{Snell's Law at the Second Surface (Flat Surface):}
+    \[
+    n_2 \sin(\beta) = n_1 \sin(\gamma)
+    \]
+    Where:
+    \begin{itemize}
+        \item \( \gamma \) is the angle of the ray after exiting the lens.
+    \end{itemize}
+
+    \item \textbf{Paraxial Approximation:}
+    \[
+    \sin(\theta) \approx \theta \quad \text{(for small angles)}
+    \]
+    This approximation simplifies the trigonometric relationships, making the equations linear and easier to solve.
+\end{enumerate}
+
+\subsection*{Part (b): Expression for the Lens Focal Length}
+
+The lensmaker's formula for a thin lens is given by:
+\[
+\frac{1}{f} = (n - 1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right)
+\]
+Where:
+\begin{itemize}
+    \item \( f \) is the focal length of the lens.
+    \item \( n \) is the refractive index of the lens material.
+    \item \( R_1 \) and \( R_2 \) are the radii of curvature of the two lens surfaces.
+\end{itemize}
+
+For a plano-convex lens:
+\begin{itemize}
+    \item \( R_1 = R \) (radius of curvature of the curved surface).
+    \item \( R_2 = \infty \) (since the back surface is flat).
+\end{itemize}
+
+Substituting these into the lensmaker's formula:
+\[
+\frac{1}{f} = (n - 1) \left( \frac{1}{R} - \frac{1}{\infty} \right) = (n - 1) \left( \frac{1}{R} - 0 \right) = \frac{n - 1}{R}
+\]
+Therefore, the focal length \( f \) of the plano-convex lens is:
+\[
+f = \frac{R}{n - 1}
+\] 
+\end{document} 
