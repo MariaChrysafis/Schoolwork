@@ -81,4 +81,36 @@ So, $x_0 = 0$ and $y_0 = 0$. Now, applying the second condition (that $(1, 0, 0)
     y = \alpha(\cos \theta (1)-\sin \theta (0)) + y_0.
 \end{align*}
 So, $\alpha = 3$, $x_0 = 0$, and $y_0 = 0$.
+\section{Problem 3}
+We know that
+$$Z(x, y) = \frac{Y(x, y) \cos \theta}{\sin \theta}- \frac{y}{\sin \theta}.$$
+\subsection{Constraint Along Vertical Edges}
+We know that 
+\begin{align*}
+\frac{\partial Z}{\partial y} &= \frac{\partial}{\partial y} \left( \frac{Y \cos \theta}{\sin \theta} - \frac{y}{\sin \theta} \right) 
+\\ &= \frac{\cos \theta}{\sin \theta} \cdot \frac{\partial Y}{\partial y} - \frac{1}{\sin \theta}
+\\ &= \frac{\cos \theta}{\sin \theta} \cdot \frac{1}{\cos \theta} - \frac{1}{\sin \theta}
+\\ &= 0.
+\end{align*}
+\subsection{Constraint Along Horizontal Edges}
+For the constraint along horizontal edges,
+\begin{align*}
+    \frac{\partial Z}{\partial t} &= \frac{\partial}{\partial t} \left( \frac{Y \cos \theta}{\sin \theta} - \frac{y}{\sin \theta} \right)
+    \\ &= \frac{\cos \theta}{\sin \theta} \cdot \frac{\delta Y}{\delta t} - \frac{1}{\sin \theta} \cdot \frac{\delta y}{\delta t}.
+\end{align*}
+Since $\frac{\delta Y}{\delta t} = 0$ (from the horizontal edge constraint) and $\frac{\delta y}{\delta t} = n_x$ (because $t = (-n_y, n_x)$),
+$$\frac{\partial Z}{\partial t} = 0 - \frac{n_x}{\sin \theta} = - \frac{n_x}{\sin \theta}.$$
+\subsection{Constraint on Flat Surfaces}
+For flat surfaces, the second derivative of $Y(x, y)$ is zero, so
+\begin{align*}
+    \frac{\partial^2 Y}{\partial x^2} = \frac{\partial^2 Y}{\partial y^2} = \frac{\partial^2 Y}{\partial x \partial y} = 0.
+\end{align*}
+Some algebra shows that
+\begin{align*}
+    \frac{\partial^2 Z}{\partial x^2} = \frac{\partial^2}{\partial x^2} \left( \frac{Y \cos \theta}{\sin \theta} - \frac{y}{\sin \theta} \right) = 0 \\
+    \frac{\partial^2 Z}{\partial x^2} = \frac{\partial^2}{\partial y^2} \left( \frac{Y \cos \theta}{\sin \theta} - \frac{y}{\sin \theta} \right) = 0 \\
+    \frac{\partial^2 Z}{\partial x^2} = \frac{\partial^2}{\partial x \partial y} \left( \frac{Y \cos \theta}{\sin \theta} - \frac{y}{\sin \theta} \right) = 0.
+\end{align*}
+So, 
+$$\frac{\partial^2 Z}{\partial x^2} = \frac{\partial^2 Z}{\partial y^2} = \frac{\partial^2 Z}{\partial x \partial y} = 0.$$
 \end{document}  
